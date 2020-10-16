@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearsand"
+        android:weightSum="10"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:background="@drawable/poojatopnew"
+        android:gravity="center"
+        />
+        <pl.droidsonroids.gif.GifImageView
+
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="4"
+            android:id="@+id/karpooram"
+
+            android:src="@drawable/poojakar2"
+
+            />
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        app:penMinWidth="10dp"
+        android:background="@drawable/poojasand"
+
+        app:penColor="#786827"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal"
+
+        android:layout_weight="1">
+        <Button
+            android:text="Clear"
+
+            android:id="@+id/cleartext"
+            android:textColor="@color/yellow"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonlanguage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+        </Button>
+        <Button
+            android:text="Next"
+            android:id="@+id/textnext"
+            android:textColor="@color/yellow"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonlanguage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+        </Button>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+    >
+
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:text="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/amount_et"
+        android:inputType="number"/>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UPI ID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upi_id"
+        android:layout_below="@+id/amount_et"
+        android:text="chiraggsam@okaxis"/>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/upi_id"
+        android:text="Chirag Samtani"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/note"
+        android:layout_below="@+id/name"
+        android:text="Here's some money bro!"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:id="@+id/send"
+        android:layout_below="@+id/note"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="send by upi"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearstart"
+android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@drawable/poojaimage"
+        android:gravity="center"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:text="Pooja App"></TextView>
+    </LinearLayout>
+    <LinearLayout
+android:visibility="gone"
+        android:id="@+id/lineasingature"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:text="Signature"></TextView>
+<!--        <com.github.gcacace.signaturepad.views.SignaturePad-->
+<!--android:background="@color/yellow"-->
+<!--            android:id="@+id/signature_pad"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="400dp"-->
+
+<!--            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/bclear"
+                android:layout_height="50dp"
+                android:text="Clear "></Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:id="@+id/bsave"
+                android:layout_height="50dp"
+                android:text="Save "></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+       android:id="@+id/linearlanguage"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/poojaimage"
+
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="English"
+                android:id="@+id/english"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:text="Malayalam"
+                android:id="@+id/malayalam"
+                android:layout_margin="10dp"
+                android:textColor="@color/yellow"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Hindi"
+                android:id="@+id/hindi"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:text="Kannada"
+                android:id="@+id/kannada"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Tamil"
+                android:id="@+id/tamil"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:text="Telungu"
+                android:id="@+id/telungu"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parentrelative"
+android:visibility="gone"
+        android:background="@drawable/poojanobook"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+            android:gravity="center"
+>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:layout_width="50dp"
+android:id="@+id/bchandathiri"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/chandhanamborder"
+
+                    ></Button>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bkarpooram"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/karpooramborder"
+
+                    ></Button>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bbell"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bellborder"
+
+                    ></Button>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bflower"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/flwerborder"
+
+                    ></Button>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bsank"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shankborder"
+
+                    ></Button>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shankborder"
+
+                    ></Button>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearname"
+            android:layout_margin="10dp"
+            android:weightSum="10"
+
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:id="@+id/nameedit"
+                android:hint="Enter Name"
+                android:textColor="@color/yellow"
+                android:padding="5dp"
+                android:textColorHint="@color/yellow"
+                android:background="@drawable/buttonlanguage"
+                android:layout_height="50dp"></EditText>
+            <Button
+                android:layout_width="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/googleplay"
+
+                android:id="@+id/bname"
+                ></Button>
+
+
+        </LinearLayout>
+        <LinearLayout
+       android:layout_alignParentBottom="true"
+        android:id="@+id/linearstar"
+android:layout_margin="10dp"
+            android:weightSum="10"
+android:visibility="gone"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+     >
+   <EditText
+     android:layout_weight="9"
+    android:layout_width="0dp"
+       android:id="@+id/staredit"
+       android:hint="Enter Zodiac Sign"
+       android:textColor="@color/yellow"
+       android:padding="5dp"
+       android:textColorHint="@color/yellow"
+       android:background="@drawable/buttonlanguage"
+       android:layout_height="50dp"></EditText>
+        <Button
+            android:layout_width="50dp"
+            android:layout_marginLeft="30dp"
+           android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/googleplay"
+
+            android:id="@+id/bstar"
+        ></Button>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearpop"
+            android:layout_margin="10dp"
+
+            android:visibility="gone"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:text="Book Pooja"
+                android:id="@+id/bbook"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:text="Read Book"
+                android:visibility="gone"
+                android:id="@+id/readbook"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+            </Button>
+            <Button
+                android:text="Tool Pooja"
+                android:id="@+id/btool"
+                android:textColor="@color/yellow"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linearupload"
+
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:id="@+id/btnfile"
+
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="get from files"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:id="@+id/upload"
+
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Upload1"/>
+            <ListView
+                android:layout_below="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lvInternalStorage"></ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearimage"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="11"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/book"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+
+            android:id="@+id/imgview"
+            android:layout_weight="9"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+           ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bborard1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/googleplay"
+
+                android:gravity=""></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearpdf"
+        android:orientation="vertical"
+        android:padding="10dp"
+android:visibility="gone"
+        android:weightSum="11"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/book"
+        android:layout_height="match_parent">
+
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdfView"
+
+            android:layout_weight="9"
+
+           android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bborard"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/googleplay"
+
+                android:gravity=""></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/realtivesignature"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/red"></LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearsignature"
+            android:layout_margin="10dp"
+            android:weightSum="10"
+
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+<!--
+
+-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/chandathirigif"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/chandathiri"
+            android:layout_height="match_parent"
+            android:src="@drawable/pooja1"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/karpooramgif"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/karpooram"
+            android:layout_height="match_parent"
+            android:src="@drawable/poojakar2"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/flowergif"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/flower"
+            android:layout_height="match_parent"
+            android:src="@drawable/poojaaaaaaaaaaaa2"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bellgif"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/bell"
+            android:layout_height="match_parent"
+            android:src="@drawable/poojabell"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
