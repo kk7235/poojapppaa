@@ -53,7 +53,7 @@
 
         android:layout_weight="1">
         <Button
-            android:text="Clear"
+            android:text="@string/clear"
 
             android:id="@+id/cleartext"
             android:textColor="@color/yellow"
@@ -65,7 +65,7 @@
 
         </Button>
         <Button
-            android:text="Next"
+            android:text="@string/next"
             android:id="@+id/textnext"
             android:textColor="@color/yellow"
             android:layout_margin="10dp"

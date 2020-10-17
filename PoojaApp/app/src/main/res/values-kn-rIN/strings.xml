@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">ಪೂಜಾ ಅಪ್ಲಿಕೇಶನ್</string>
+    <string name="amount">ಮೊತ್ತ</string>
+    <string name="upi_id">ಯುಪಿಐ ಐಡಿ</string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="note">ಗಮನಿಸಿ</string>
+    <string name="chirag">ಚಿರಾಗ್ ಸಮತಾನಿ</string>
+    <string name="here_is">ಇಲ್ಲಿ ಸ್ವಲ್ಪ ಹಣವಿದೆ ಬ್ರೋ!</string>
+    <string name="send_by_upi">ಉಪಿ ಮೂಲಕ ಕಳುಹಿಸಿ</string>
+    <string name="signature">ಸಹಿ</string>
+    <string name="clear">ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="save">ಉಳಿಸಿ</string>
+    <string name="english">ಇಂಗ್ಲಿಷ್</string>
+    <string name="malayalam">ಮಲಯಾಳಂ</string>
+    <string name="hindi">ಹಿಂದಿ</string>
+    <string name="kannada">ಕನ್ನಡ</string>
+    <string name="tamil">ತಮಿಳು</string>
+    <string name="telugu">ತೆಲುಗು</string>
+    <string name="enter_name">ಹೆಸರನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="enter_zodiac">ರಾಶಿಚಕ್ರ ಚಿಹ್ನೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="book_pooja">ಪುಸ್ತಕ ಪೂಜಾ</string>
+    <string name="read_book">ಪುಸ್ತಕ ಓದಿ</string>
+    <string name="tool_pooja">ಟೂಲ್ ಪೂಜಾ</string>
+    <string name="get_from_file">ಫೈಲ್‌ಗಳಿಂದ ಪಡೆಯಿರಿ</string>
+    <string name="upload">ಅಪ್‌ಲೋಡ್</string>
+    <string name="select_item">ಪೂಜೆಗೆ ಐಟಂ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="dakshina">ದಕ್ಷಿಣ</string>
+    <string name="send">ಕಳುಹಿಸಿ</string>
+    <string name="book_image">ಪುಸ್ತಕ ಚಿತ್ರ</string>
+    <string name="book_pdf">ಪುಸ್ತಕ ಪಿಡಿಎಫ್</string>
+    <string name="next">ಮುಂದೆ</string>
+    <string name="error">ದೋಷ</string>
+    <string name="please_enter_name">ದಯವಿಟ್ಟು ಹೆಸರನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="please_enter_zodiac">ದಯವಿಟ್ಟು ರಾಶಿಚಕ್ರ ಚಿಹ್ನೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="sd_card_not_found">ಯಾವುದೇ SD ಕಾರ್ಡ್ ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="upi_app_not_found">ಯಾವುದೇ ಯುಪಿಐ ಅಪ್ಲಿಕೇಶನ್ ಕಂಡುಬಂದಿಲ್ಲ, ದಯವಿಟ್ಟು ಮುಂದುವರಿಸಲು ಒಂದನ್ನು ಸ್ಥಾಪಿಸಿ</string>
+    <string name="dakshina_success">ದಕ್ಷಿಣ ಸಮರ್ಪಣಂ ಯಶಸ್ವಿಯಾಗಿದೆ.</string>
+    <string name="payment_cancelled">ಬಳಕೆದಾರರಿಂದ ಪಾವತಿ ರದ್ದುಗೊಂಡಿದೆ.</string>
+    <string name="transaction_failed">ವ್ಯವಹಾರ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="network_error">ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
+    <string name="excel_upload">ಎಕ್ಸೆಲ್ ಅಪ್‌ಲೋಡ್</string>
+    <string name="please_wait">ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ, ಎಕ್ಸೆಲ್ ಅಪ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ ...</string>
+    <string name="pay_with">ಇದರೊಂದಿಗೆ ಪಾವತಿಸಿ</string>
+    <string name="select_pdf">ಪಿಡಿಎಫ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="select_image">ಚಿತ್ರವನ್ನು ಆರಿಸಿ</string>
+
+
+</resources>

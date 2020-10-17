@@ -13,7 +13,7 @@
 
 
     <Button
-        android:text="Book Image"
+        android:text="@string/book_image"
         android:id="@+id/bimage"
         android:textColor="@color/yellow"
         android:layout_margin="10dp"
@@ -25,7 +25,7 @@
 
     </Button>
     <Button
-        android:text="Book PDF"
+        android:text="@string/book_pdf"
         android:id="@+id/bpdf"
         android:layout_marginTop="60dp"
         android:textColor="@color/yellow"

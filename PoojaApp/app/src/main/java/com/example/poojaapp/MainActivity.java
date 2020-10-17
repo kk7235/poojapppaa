@@ -53,6 +53,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.BaseMultiplePermissionsListener;
+import com.yariksoffice.lingver.Lingver;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -71,6 +72,7 @@ import java.util.List;
 
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;
+
 
 public class MainActivity extends AppCompatActivity {
     private static final int PICK_PDF_CODE = 1000;
@@ -148,11 +150,11 @@ public class MainActivity extends AppCompatActivity {
         bflower = findViewById(R.id.bflower);
  bell= findViewById(R.id.bell);
 
-        if (player == null) {
+        /*if (player == null) {
             player = MediaPlayer.create(this, R.raw.audio);
             player.start();
             player.setLooping(true);
-        }
+        }*/
 
 
         chandathirigif = findViewById(R.id.chandathirigif);
@@ -191,6 +193,20 @@ public class MainActivity extends AppCompatActivity {
         btamil = findViewById(R.id.tamil);
         bbell = findViewById(R.id.bbell);
         bstar = findViewById(R.id.bstar);
+
+
+        if (LanguageHelper.getUserLanguage(this) != null) {
+            if (getIntent() != null) {
+                if (!getIntent().getBooleanExtra("refresh", false)) {
+                    startAudio();
+                }
+            }
+            resumeApp();
+        } else {
+            startAudio();
+        }
+
+
         Dexter.withActivity(this).withPermissions(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new BaseMultiplePermissionsListener() {
             @Override
             public void onPermissionsChecked(MultiplePermissionsReport report) {
@@ -626,10 +642,11 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("language", language);
                 editor.apply();
 
+                setLocale("ta");
 
-                linearlanguage.setVisibility(View.GONE);
+                /*linearlanguage.setVisibility(View.GONE);
                 parentrelative.setVisibility(View.VISIBLE);
-                linearname.setVisibility(View.VISIBLE);
+                linearname.setVisibility(View.VISIBLE);*/
             }
         });
         bhindi.setOnClickListener(new View.OnClickListener() {
@@ -639,9 +656,12 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("language", language);
                 editor.apply();
-                linearlanguage.setVisibility(View.GONE);
+
+                setLocale("hi");
+
+                /*linearlanguage.setVisibility(View.GONE);
                 parentrelative.setVisibility(View.VISIBLE);
-                linearname.setVisibility(View.VISIBLE);
+                linearname.setVisibility(View.VISIBLE);*/
             }
         });
         bmalayalam.setOnClickListener(new View.OnClickListener() {
@@ -651,6 +671,8 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("language", language);
                 editor.apply();
+
+                setLocale("ml");
             }
         });
         btelungu.setOnClickListener(new View.OnClickListener() {
@@ -660,9 +682,12 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("language", language);
                 editor.apply();
-                linearlanguage.setVisibility(View.GONE);
+
+                setLocale("te");
+
+                /*linearlanguage.setVisibility(View.GONE);
                 parentrelative.setVisibility(View.VISIBLE);
-                linearname.setVisibility(View.VISIBLE);
+                linearname.setVisibility(View.VISIBLE);*/
             }
         });
         bkannada.setOnClickListener(new View.OnClickListener() {
@@ -672,9 +697,12 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString("language", language);
                 editor.apply();
-                linearlanguage.setVisibility(View.GONE);
+
+                setLocale("kn");
+
+                /*linearlanguage.setVisibility(View.GONE);
                 parentrelative.setVisibility(View.VISIBLE);
-                linearname.setVisibility(View.VISIBLE);
+                linearname.setVisibility(View.VISIBLE);*/
             }
         });
 
@@ -1871,4 +1899,54 @@ public class MainActivity extends AppCompatActivity {
         oldInstanceState.clear();
     }
 
+
+
+
+
+
+    public void setLocale(String lang) {
+        Lingver.getInstance().setLocale(this, lang);
+        LanguageHelper.storeUserLanguage(this, lang);
+        Intent refreshIntent = new Intent(this, MainActivity.class);
+        refreshIntent.putExtra("refresh", true);
+        finish();
+        startActivity(refreshIntent);
+    }
+
+    private void startAudio() {
+        if (player == null) {
+            player = MediaPlayer.create(this, R.raw.audio);
+            player.start();
+            player.setLooping(true);
+        }
+    }
+
+    private void resumeApp() {
+        linearlanguage.setVisibility(View.GONE);
+        chandathirigif.setVisibility(View.VISIBLE);
+        try {
+            GifDrawable gifDrawable = new GifDrawable(getResources(), R.drawable.newdor);
+            chandathiri.setImageDrawable(gifDrawable);
+        } catch (Resources.NotFoundException e) {
+
+            e.printStackTrace();
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+
+
+        new Handler().postDelayed(new Runnable() {
+
+
+            @Override
+            public void run() {
+                // This method will be executed once the timer is over
+                parentrelative.setVisibility(View.VISIBLE);
+                chandathirigif.setVisibility(View.GONE);
+                linearname.setVisibility(View.VISIBLE);
+            }
+        }, 1500);
+
+    }
 }

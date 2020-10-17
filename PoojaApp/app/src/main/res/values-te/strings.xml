@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">పూజా అనువర్తనం</string>
+    <string name="amount">మొత్తం</string>
+    <string name="upi_id">యుపిఐ ఐడి</string>
+    <string name="name">పేరు</string>
+    <string name="note">గమనిక</string>
+    <string name="chirag">చిరాగ్ సమతాని</string>
+    <string name="here_is">ఇక్కడ కొంత డబ్బు ఉంది బ్రో!</string>
+    <string name="send_by_upi">upi ద్వారా పంపండి</string>
+    <string name="signature">సంతకం</string>
+    <string name="clear">క్లియర్</string>
+    <string name="save">సేవ్</string>
+    <string name="english">ఇంగ్లీష్</string>
+    <string name="malayalam">మలయాళం</string>
+    <string name="hindi">హిందీ</string>
+    <string name="kannada">కన్నడ</string>
+    <string name="tamil">తమిళం</string>
+    <string name="telugu">తెలుగు</string>
+    <string name="enter_name">పేరు నమోదు చేయండి</string>
+    <string name="enter_zodiac">రాశిచక్ర చిహ్నాన్ని నమోదు చేయండి</string>
+    <string name="book_pooja">పుస్తకం చదవండి</string>
+    <string name="read_book">సాధనం పూజ</string>
+    <string name="tool_pooja">ఫైళ్ళ నుండి పొందండి</string>
+    <string name="get_from_file">అప్‌లోడ్</string>
+    <string name="upload">పూజ కోసం అంశం ఎంచుకోండి</string>
+    <string name="select_item">దక్షిణా</string>
+    <string name="dakshina">పంపండి</string>
+    <string name="send">పుస్తక చిత్రం</string>
+    <string name="book_image">పుస్తకం PDF</string>
+    <string name="book_pdf">తదుపరి</string>
+    <string name="next">లోపం</string>
+    <string name="error">దయచేసి పేరు నమోదు చేయండి</string>
+    <string name="please_enter_name">దయచేసి పేరు నమోదు చేయండి</string>
+    <string name="please_enter_zodiac">యుపిఐ అనువర్తనం కనుగొనబడలేదు, దయచేసి కొనసాగించడానికి ఒకదాన్ని ఇన్‌స్టాల్ చేయండి</string>
+    <string name="sd_card_not_found">దక్షిణా సమర్పన విజయవంతమైంది.</string>
+    <string name="upi_app_not_found">చెల్లింపు వినియోగదారు రద్దు చేయబడింది.</string>
+    <string name="dakshina_success">లావాదేవీ విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="payment_cancelled">ఇంటర్నెట్ కనెక్షన్ అందుబాటులో లేదు. దయచేసి తనిఖీ చేసి, మళ్లీ ప్రయత్నించండి</string>
+    <string name="transaction_failed">లావాదేవీ విఫలమైంది. దయచేసి మళ్ళీ ప్రయత్నించండి</string>
+    <string name="network_error">ఇంటర్నెట్ కనెక్షన్ అందుబాటులో లేదు. దయచేసి తనిఖీ చేసి, మళ్లీ ప్రయత్నించండి</string>
+    <string name="excel_upload">ఎక్సెల్ అప్‌లోడ్</string>
+    <string name="please_wait">దయచేసి వేచి ఉండండి, ఎక్సెల్ అప్‌లోడ్ అవుతోంది ...</string>
+    <string name="pay_with">తో చెల్లించండి</string>
+    <string name="select_pdf">పిడిఎఫ్ ఎంచుకోండి</string>
+    <string name="select_image">ఫోటోను ఎంచుకోండి</string>
+
+
+</resources>

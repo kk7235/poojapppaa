@@ -24,7 +24,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount"
+        android:hint="@string/amount"
         android:text="1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -36,7 +36,7 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="UPI ID"
+        android:hint="@string/upi_id"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
@@ -48,7 +48,7 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/name"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
@@ -59,14 +59,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Note"
+        android:hint="@string/note"
         android:visibility="gone"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:id="@+id/note"
         android:layout_below="@+id/name"
-        android:text="Here's some money bro!"/>
+        android:text="@string/here_is"/>
 
     <Button
         android:layout_width="100dp"
@@ -77,7 +77,7 @@
         android:layout_below="@+id/note"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="send by upi"/>
+        android:text="@string/send_by_upi"/>
 
     </RelativeLayout>
 
@@ -96,7 +96,7 @@ android:visibility="gone"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="@color/yellow"
-            android:text="Pooja App"></TextView>
+            android:text="@string/app_name"></TextView>
     </LinearLayout>
     <LinearLayout
 android:visibility="gone"
@@ -110,7 +110,7 @@ android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:textSize="20dp"
-            android:text="Signature"></TextView>
+            android:text="@string/signature"></TextView>
 <!--        <com.github.gcacace.signaturepad.views.SignaturePad-->
 <!--android:background="@color/yellow"-->
 <!--            android:id="@+id/signature_pad"-->
@@ -128,14 +128,14 @@ android:visibility="gone"
                 android:layout_weight="1"
                 android:id="@+id/bclear"
                 android:layout_height="50dp"
-                android:text="Clear "></Button>
+                android:text="@string/clear"></Button>
             <Button
                 android:layout_width="0dp"
                 android:layout_weight="1"
 
                 android:id="@+id/bsave"
                 android:layout_height="50dp"
-                android:text="Save "></Button>
+                android:text="@string/save"></Button>
         </LinearLayout>
     </LinearLayout>
 
@@ -158,7 +158,7 @@ android:visibility="gone"
             android:layout_height="wrap_content">
 
             <Button
-                android:text="English"
+                android:text="@string/english"
                 android:id="@+id/english"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -169,7 +169,7 @@ android:visibility="gone"
 
             </Button>
             <Button
-                android:text="Malayalam"
+                android:text="@string/malayalam"
                 android:id="@+id/malayalam"
                 android:layout_margin="10dp"
                 android:textColor="@color/yellow"
@@ -188,7 +188,7 @@ android:visibility="gone"
             android:layout_height="wrap_content">
 
             <Button
-                android:text="Hindi"
+                android:text="@string/hindi"
                 android:id="@+id/hindi"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -199,7 +199,7 @@ android:visibility="gone"
 
             </Button>
             <Button
-                android:text="Kannada"
+                android:text="@string/kannada"
                 android:id="@+id/kannada"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -218,7 +218,7 @@ android:visibility="gone"
             android:layout_height="wrap_content">
 
             <Button
-                android:text="Tamil"
+                android:text="@string/tamil"
                 android:id="@+id/tamil"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -229,7 +229,7 @@ android:visibility="gone"
 
             </Button>
             <Button
-                android:text="Telungu"
+                android:text="@string/telugu"
                 android:id="@+id/telungu"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -343,9 +343,9 @@ android:id="@+id/bchandathiri"
                 android:layout_weight="9"
                 android:layout_width="0dp"
                 android:id="@+id/nameedit"
-                android:hint="Enter Name"
+                android:hint="@string/enter_name"
                 android:textColor="@color/yellow"
-                android:padding="5dp"
+                android:padding="6dp"
                 android:textColorHint="@color/yellow"
                 android:background="@drawable/buttonlanguage"
                 android:layout_height="50dp"></EditText>
@@ -375,9 +375,9 @@ android:visibility="gone"
      android:layout_weight="9"
     android:layout_width="0dp"
        android:id="@+id/staredit"
-       android:hint="Enter Zodiac Sign"
+       android:hint="@string/enter_zodiac"
        android:textColor="@color/yellow"
-       android:padding="5dp"
+       android:padding="6dp"
        android:textColorHint="@color/yellow"
        android:background="@drawable/buttonlanguage"
        android:layout_height="50dp"></EditText>
@@ -405,7 +405,7 @@ android:visibility="gone"
             android:orientation="horizontal"
             >
             <Button
-                android:text="Book Pooja"
+                android:text="@string/book_pooja"
                 android:id="@+id/bbook"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -416,7 +416,7 @@ android:visibility="gone"
 
             </Button>
             <Button
-                android:text="Read Book"
+                android:text="@string/read_book"
                 android:visibility="gone"
                 android:id="@+id/readbook"
                 android:textColor="@color/yellow"
@@ -428,7 +428,7 @@ android:visibility="gone"
 
             </Button>
             <Button
-                android:text="Tool Pooja"
+                android:text="@string/tool_pooja"
                 android:id="@+id/btool"
                 android:textColor="@color/yellow"
                 android:layout_margin="10dp"
@@ -456,7 +456,7 @@ android:visibility="gone"
 
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
-                android:text="get from files"/>
+                android:text="@string/get_from_file"/>
             <Button
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -466,7 +466,7 @@ android:visibility="gone"
 
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
-                android:text="Upload1"/>
+                android:text="@string/upload"/>
             <ListView
                 android:layout_below="@+id/upload"
                 android:layout_width="match_parent"

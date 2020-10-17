@@ -13,7 +13,7 @@
     android:layout_gravity="center"
 >
     <TextView
-        android:text="Select Item For Pooja"
+        android:text="@string/select_item"
         android:gravity="center"
         android:textColor="@color/yellow"
         android:textSize="20sp"

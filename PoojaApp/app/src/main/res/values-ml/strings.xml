@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Pooja App</string>
+
+    <string name="amount">തുക</string>
+    <string name="upi_id">യുപിഐ ഐഡി</string>
+    <string name="name">പേര്</string>
+    <string name="note">കുറിപ്പ്</string>
+    <string name="chirag">Chirag Samtani</string>
+    <string name="here_is">ഇതാ കുറച്ച് പണം സഹോദരാ!</string>
+    <string name="send_by_upi">യുപിഐ വഴി അയയ്ക്കുക</string>
+    <string name="signature">കയ്യൊപ്പ്</string>
+    <string name="clear">മായ്‌ക്കുക</string>
+    <string name="save">സംരക്ഷിക്കുക</string>
+    <string name="english">ഇംഗ്ലീഷ്</string>
+    <string name="malayalam">മലയാളം</string>
+    <string name="hindi">ഹിന്ദി</string>
+    <string name="kannada">കന്നഡ</string>
+    <string name="tamil">തമിഴ്</string>
+    <string name="telugu">തെലുങ്ക്</string>
+    <string name="enter_name">പേര് നൽകുക</string>
+    <string name="enter_zodiac">നക്ഷത്രം നൽകുക</string>
+    <string name="book_pooja">പൂജ ബുക്ക് ചെയ്യുക</string>
+    <string name="read_book">പുസ്തകം വായിക്കുക</string>
+    <string name="tool_pooja">ഉപകരണ പൂജ</string>
+    <string name="get_from_file">ഫയലുകളിൽ നിന്ന് ചേർക്കുക</string>
+    <string name="upload">അപ്‌ലോഡുചെയ്യുക</string>
+
+    <string name="select_item">പൂജയ്‌ക്കായി ഇനം തിരഞ്ഞെടുക്കുക</string>
+    <string name="dakshina">ദക്ഷിണ</string>
+    <string name="send">അയയ്‌ക്കുക</string>
+    <string name="book_image">പുസ്തകത്തിന്റെ ഫോട്ടോ</string>
+    <string name="book_pdf">പുസ്തകത്തിന്റെ പി.ഡി.എഫ്</string>
+    <string name="next">അടുത്തത്</string>
+
+    <string name="error">പിശക്</string>
+    <string name="please_enter_name">പേര് നൽകുക</string>
+    <string name="please_enter_zodiac">നക്ഷത്രം നൽകുക</string>
+    <string name="sd_card_not_found">SD കാർഡൊന്നും കണ്ടെത്തിയില്ല.</string>
+    <string name="upi_app_not_found">യുപിഐ അപ്ലിക്കേഷനുകളൊന്നും കണ്ടെത്തിയില്ല, തുടരുന്നതിന് ദയവായി ഒന്ന് ഇൻസ്റ്റാൾ ചെയ്യുക</string>
+    <string name="dakshina_success">ദക്ഷിണ സമർപ്പണം പൂർത്തിയായി.</string>
+    <string name="payment_cancelled">ഉപയോക്താവ് പേയ്‌മെന്റ് റദ്ദാക്കി.</string>
+    <string name="transaction_failed">ഇടപാട് പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക</string>
+    <string name="network_error">ഇന്റർനെറ്റ് കണക്ഷൻ ലഭ്യമല്ല. പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="excel_upload">എക്സൽ അപ്‌ലോഡ്</string>
+    <string name="please_wait">ദയവായി കാത്തിരിക്കുക, എക്സൽ അപ്‌ലോഡുചെയ്യുന്നു ...</string>
+    <string name="pay_with">ഉപയോഗിച്ച് പണമടയ്‌ക്കുക</string>
+    <string name="select_pdf">പിഡിഎഫ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="select_image">ചിത്രം തിരഞ്ഞെടുക്കുക</string>
+
+</resources>

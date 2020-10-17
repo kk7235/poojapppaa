@@ -1,3 +1,53 @@
 <resources>
     <string name="app_name">Pooja App</string>
+
+    <string name="amount">Amount</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="name">Name</string>
+    <string name="note">Note</string>
+    <string name="chirag">Chirag Samtani</string>
+    <string name="here_is">Here\'s some money bro!</string>
+    <string name="send_by_upi">send by upi</string>
+    <string name="signature">Signature</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="english">English</string>
+    <string name="malayalam">മലയാളം</string>
+    <string name="hindi">हिंदी</string>
+    <string name="kannada">ಕನ್ನಡ</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="telugu">తెలుగు</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_zodiac">Enter Zodiac Sign</string>
+    <string name="book_pooja">Book Pooja</string>
+    <string name="read_book">Read Book</string>
+    <string name="tool_pooja">Tool Pooja</string>
+    <string name="get_from_file">Get from files</string>
+    <string name="upload">Upload</string>
+
+    <string name="select_item">Select Item For Pooja</string>
+    <string name="dakshina">Dakshiana</string>
+    <string name="send">Send</string>
+    <string name="book_image">Book Image</string>
+    <string name="book_pdf">Book PDF</string>
+    <string name="next">Next</string>
+
+    <string name="error">Error</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_zodiac">Please Enter Zodiac Sign</string>
+    <string name="sd_card_not_found">No SD card found.</string>
+    <string name="upi_app_not_found">No UPI app found, please install one to continue</string>
+    <string name="dakshina_success">Dakshna samarpanam successful.</string>
+    <string name="payment_cancelled">Payment cancelled by user.</string>
+    <string name="transaction_failed">Transaction failed.Please try again</string>
+    <string name="network_error">Internet connection is not available. Please check and try again</string>
+
+    <string name="excel_upload">Excel Upload</string>
+    <string name="please_wait">Please wait, excel is uploading...</string>
+
+    <string name="select_image">Select IMAGE</string>
+    <string name="select_pdf">Select PDF</string>
+    <string name="pay_with">Pay with</string>
+
+
 </resources>
